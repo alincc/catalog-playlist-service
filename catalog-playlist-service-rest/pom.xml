@@ -36,18 +36,14 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-hateoas</artifactId>
-        </dependency> 
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-oxm</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-oauth2</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -83,7 +79,11 @@
             <artifactId>catalog-metadata-model</artifactId>
             <version>0.0.1-109</version>
         </dependency>
-
+        <dependency>
+            <groupId>no.nb.microservices.catalogitem</groupId>
+            <artifactId>catalog-item-service-model</artifactId>
+            <version>0.0.1-118</version>
+        </dependency>
 
         <!-- Testing -->
         <dependency>
