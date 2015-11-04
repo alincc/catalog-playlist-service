@@ -12,7 +12,6 @@ public class Playlist implements Serializable {
     private String sesamId;
     private String urn;
     private String suburn;
-    private List<String> urns;
     private List<String> sesamIds;
     private String mediatype;
     private String title;
@@ -132,14 +131,6 @@ public class Playlist implements Serializable {
 
     public void setHosts(List<Playlist> hosts) {
         this.hosts = hosts;
-    }
-
-    public List<String> getUrns() {
-        return urns;
-    }
-
-    public void setUrns(List<String> urns) {
-        this.urns = urns;
     }
 
     public List<String> getSesamIds() {
