@@ -24,13 +24,22 @@ public class PlaylistService implements IPlaylistService {
     public Playlist findById(String sesamId) {
         ItemResource item = itemRepository.getItem(sesamId, "relatedItems");
         List<String> mediatypes = item.getMetadata().getMediaTypes();
-        if (mediatypes.contains("Musikk")) {
+        if (hasMediatype(mediatypes,"musikk")) {
             return getMusicPlaylist(item);
-        } else if (mediatypes.contains("Radio")) {
+        } else if (hasMediatype(mediatypes,"radio")) {
             return getRadioPlaylist(item);
         } else {
             return null;
         }
+    }
+
+    private boolean hasMediatype(List<String> mediatypes, String mediatype) {
+        for (String s : mediatypes) {
+            if (s.toLowerCase().equalsIgnoreCase(mediatype)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private Playlist getRadioPlaylist(ItemResource item) {
