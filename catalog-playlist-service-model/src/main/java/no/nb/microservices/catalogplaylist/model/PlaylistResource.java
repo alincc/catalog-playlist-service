@@ -16,7 +16,7 @@ public class PlaylistResource extends ResourceSupport {
     private List<String> sesamIds;
     private String mediatype;
     private String group;
-    private Integer partNumber;
+    private String partNumber;
     private List<PlaylistResource> tracks;
     private List<PlaylistResource> hosts;
 
@@ -84,11 +84,11 @@ public class PlaylistResource extends ResourceSupport {
         this.group = group;
     }
 
-    public Integer getPartNumber() {
+    public String getPartNumber() {
         return partNumber;
     }
 
-    public void setPartNumber(Integer partNumber) {
+    public void setPartNumber(String partNumber) {
         this.partNumber = partNumber;
     }
 

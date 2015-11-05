@@ -19,7 +19,7 @@ public class Playlist implements Serializable {
     private String group;
     private boolean hasMediafile;
     private boolean hasAccess;
-    private int partNumber;
+    private String partNumber;
     private List<Playlist> playlists;
     private List<Playlist> hosts;
 
@@ -93,11 +93,11 @@ public class Playlist implements Serializable {
         this.hasAccess = hasAccess;
     }
 
-    public int getPartNumber() {
+    public String getPartNumber() {
         return partNumber;
     }
 
-    public void setPartNumber(int partNumber) {
+    public void setPartNumber(String partNumber) {
         this.partNumber = partNumber;
     }
 

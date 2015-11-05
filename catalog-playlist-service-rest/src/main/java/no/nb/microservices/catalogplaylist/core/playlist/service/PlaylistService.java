@@ -2,6 +2,7 @@ package no.nb.microservices.catalogplaylist.core.playlist.service;
 
 import no.nb.microservices.catalogitem.rest.model.ItemResource;
 import no.nb.microservices.catalogitem.rest.model.StreamingInfo;
+import no.nb.microservices.catalogitem.rest.model.TitleInfo;
 import no.nb.microservices.catalogplaylist.core.item.repository.CatalogItemRepository;
 import no.nb.microservices.catalogplaylist.core.model.Playlist;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -85,17 +86,25 @@ public class PlaylistService implements IPlaylistService {
 
     private List<Playlist> addConstituent(ItemResource item) {
         List<Playlist> tracks = new ArrayList<>();
-//        tracks.add(getSimplePlaylist(item));
-
         if (item.getRelatedItems().getConstituents() == null) {
             return tracks;
         }
         for (ItemResource itemResource : item.getRelatedItems().getConstituents()) {
             Playlist subtrack = getSimplePlaylist(itemResource);
-            // partnumber
+            getPartnumber(itemResource, subtrack);
+
             tracks.add(subtrack);
         }
         return tracks;
+    }
+
+    private void getPartnumber(ItemResource itemResource, Playlist subtrack) {
+        for (TitleInfo titleInfo : itemResource.getMetadata().getTitleInfos()) {
+            if (titleInfo.getPartNumber() != null) {
+                subtrack.setPartNumber(titleInfo.getPartNumber());
+                break;
+            }
+        }
     }
 
     private List<Playlist> addHost(ItemResource item) {
@@ -105,7 +114,7 @@ public class PlaylistService implements IPlaylistService {
         }
         for (ItemResource itemResource : item.getRelatedItems().getHosts()) {
             Playlist subtrack = getSimplePlaylist(itemResource);
-            // partnumber
+            getPartnumber(itemResource, subtrack);
             tracks.add(subtrack);
         }
         return tracks;
