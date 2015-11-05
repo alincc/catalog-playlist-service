@@ -25,6 +25,9 @@ public class RssPlaylistResourceAssembler {
         channel.setDescription("Playlist");
 
         for (Playlist pl : playlist.getPlaylists()) {
+            if (!pl.hasMediafile()) {
+                continue;
+            }
             PlaylistResourceAssembler assembler = new PlaylistResourceAssembler();
             PlaylistResource resource = assembler.toResource(pl);
 

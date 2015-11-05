@@ -20,7 +20,6 @@ public class PlaylistResourceAssembler extends ResourceAssemblerSupport<Playlist
         resource.setUrn(playlist.getUrn());
         resource.setMediatype(playlist.getMediatype());
         resource.setGroup(playlist.getGroup());
-        resource.setUrns(playlist.getUrns());
         resource.setSesamIds(playlist.getSesamIds());
         resource.setPartNumber(playlist.getPartNumber());
         resource.setAlternativeTitle(playlist.getAlternativeTitle());
