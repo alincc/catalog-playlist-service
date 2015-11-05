@@ -1,0 +1,205 @@
+{
+  "expand": "relatedItems",
+  "id": "18d49ff8694e8e5f601d4f5f5bb805e3",
+  "_links": {
+    "self": {
+      "href": "http://localhost/catalog/items/18d49ff8694e8e5f601d4f5f5bb805e3"
+    },
+    "mods": {
+      "href": "http://localhost/catalog/metadata/18d49ff8694e8e5f601d4f5f5bb805e3/mods"
+    },
+    "presentation": {
+      "href": "http://localhost/catalog/iiif/18d49ff8694e8e5f601d4f5f5bb805e3/manifest"
+    },
+    "enw": {
+      "href": "http://localhost/catalog/reference/18d49ff8694e8e5f601d4f5f5bb805e3/enw"
+    },
+    "ris": {
+      "href": "http://localhost/catalog/reference/18d49ff8694e8e5f601d4f5f5bb805e3/ris"
+    },
+    "wiki": {
+      "href": "http://localhost/catalog/reference/18d49ff8694e8e5f601d4f5f5bb805e3/wiki"
+    },
+    "relatedItems": {
+      "href": "http://localhost/catalog/items/18d49ff8694e8e5f601d4f5f5bb805e3/relatedItems"
+    },
+    "playlist": {
+      "href": "http://localhost/catalog/playlist/18d49ff8694e8e5f601d4f5f5bb805e3/jwplayer.rss"
+    }
+  },
+  "accessInfo": {
+    "accessAllowedFrom": "NB",
+    "viewability": "ALL",
+    "isDigital": false,
+    "isPublicDomain": false
+  },
+  "metadata": {
+    "titleInfos": [
+      {
+        "title": "Djäfvulens polska ; Värmlandsvalser 1 och 2"
+      }
+    ],
+    "typeOfResource": "sound recording-musical",
+    "mediaTypes": [
+      "Musikk"
+    ],
+    "geographic": {},
+    "originInfo": {},
+    "recordInfo": {
+      "identifier": "1073174",
+      "identifierSource": "mavis.nb.no"
+    },
+    "classification": {},
+    "identifiers": {
+      "sesamId": "18d49ff8694e8e5f601d4f5f5bb805e3",
+      "oaiId": "oai:mavis.nb.no:1073174"
+    },
+    "subject": {},
+    "streamingInfo": [
+      {}
+    ]
+  },
+  "title": "Djäfvulens polska ; Värmlandsvalser 1 och 2",
+  "relatedItems": {
+    "constituents": [
+      {
+        "expand": "relatedItems",
+        "id": "dc459852bb1cb16996eae98d8d2dc980",
+        "_links": {
+          "self": {
+            "href": "http://localhost/catalog/items/dc459852bb1cb16996eae98d8d2dc980"
+          },
+          "mods": {
+            "href": "http://localhost/catalog/metadata/dc459852bb1cb16996eae98d8d2dc980/mods"
+          },
+          "presentation": {
+            "href": "http://localhost/catalog/iiif/dc459852bb1cb16996eae98d8d2dc980/manifest"
+          },
+          "enw": {
+            "href": "http://localhost/catalog/reference/dc459852bb1cb16996eae98d8d2dc980/enw"
+          },
+          "ris": {
+            "href": "http://localhost/catalog/reference/dc459852bb1cb16996eae98d8d2dc980/ris"
+          },
+          "wiki": {
+            "href": "http://localhost/catalog/reference/dc459852bb1cb16996eae98d8d2dc980/wiki"
+          },
+          "relatedItems": {
+            "href": "http://localhost/catalog/items/dc459852bb1cb16996eae98d8d2dc980/relatedItems"
+          },
+          "playlist": {
+            "href": "http://localhost/catalog/playlist/dc459852bb1cb16996eae98d8d2dc980/jwplayer.rss"
+          }
+        },
+        "accessInfo": {
+          "accessAllowedFrom": "EVERYWHERE",
+          "viewability": "ALL",
+          "isDigital": true,
+          "isPublicDomain": true
+        },
+        "metadata": {
+          "titleInfos": [
+            {
+              "title": "Djäfvulens polska",
+              "partNumber": "1"
+            }
+          ],
+          "typeOfResource": "sound recording-musical",
+          "mediaTypes": [
+            "Musikk"
+          ],
+          "geographic": {},
+          "originInfo": {
+            "issued": "1913-01-01"
+          },
+          "recordInfo": {
+            "identifier": "1073175",
+            "identifierSource": "mavis.nb.no"
+          },
+          "classification": {},
+          "identifiers": {
+            "sesamId": "dc459852bb1cb16996eae98d8d2dc980",
+            "oaiId": "oai:mavis.nb.no:1073175",
+            "urn": "URN:NBN:no-nb_digilyd_2014042213687"
+          },
+          "subject": {},
+          "streamingInfo": [
+            {
+              "identifier": "URN:NBN:no-nb_digilyd_2014042213686"
+            }
+          ]
+        },
+        "title": "Djäfvulens polska"
+      },
+      {
+        "expand": "relatedItems",
+        "id": "72609a40cbe13445068572e1fab88dc7",
+        "_links": {
+          "self": {
+            "href": "http://localhost/catalog/items/72609a40cbe13445068572e1fab88dc7"
+          },
+          "mods": {
+            "href": "http://localhost/catalog/metadata/72609a40cbe13445068572e1fab88dc7/mods"
+          },
+          "presentation": {
+            "href": "http://localhost/catalog/iiif/72609a40cbe13445068572e1fab88dc7/manifest"
+          },
+          "enw": {
+            "href": "http://localhost/catalog/reference/72609a40cbe13445068572e1fab88dc7/enw"
+          },
+          "ris": {
+            "href": "http://localhost/catalog/reference/72609a40cbe13445068572e1fab88dc7/ris"
+          },
+          "wiki": {
+            "href": "http://localhost/catalog/reference/72609a40cbe13445068572e1fab88dc7/wiki"
+          },
+          "relatedItems": {
+            "href": "http://localhost/catalog/items/72609a40cbe13445068572e1fab88dc7/relatedItems"
+          },
+          "playlist": {
+            "href": "http://localhost/catalog/playlist/72609a40cbe13445068572e1fab88dc7/jwplayer.rss"
+          }
+        },
+        "accessInfo": {
+          "accessAllowedFrom": "EVERYWHERE",
+          "viewability": "ALL",
+          "isDigital": true,
+          "isPublicDomain": true
+        },
+        "metadata": {
+          "titleInfos": [
+            {
+              "title": "Värmlandsvalser 1 och 2",
+              "partNumber": "2"
+            }
+          ],
+          "typeOfResource": "sound recording-musical",
+          "mediaTypes": [
+            "Musikk"
+          ],
+          "geographic": {},
+          "originInfo": {
+            "issued": "1913-01-01"
+          },
+          "recordInfo": {
+            "identifier": "1073177",
+            "identifierSource": "mavis.nb.no"
+          },
+          "classification": {},
+          "identifiers": {
+            "sesamId": "72609a40cbe13445068572e1fab88dc7",
+            "oaiId": "oai:mavis.nb.no:1073177",
+            "urn": "URN:NBN:no-nb_digilyd_2014042213689"
+          },
+          "subject": {},
+          "streamingInfo": [
+            {
+              "identifier": "URN:NBN:no-nb_digilyd_2014042213688"
+            }
+          ]
+        },
+        "title": "Värmlandsvalser 1 och 2"
+      }
+    ]
+  }
+}

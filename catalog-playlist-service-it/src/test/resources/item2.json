@@ -1,0 +1,72 @@
+{
+  "expand": "relatedItems",
+  "id": "1234",
+  "_links": {
+    "self": {
+      "href": "http://localhost/catalog/items/1234"
+    },
+    "mods": {
+      "href": "http://localhost/catalog/metadata/1234/mods"
+    },
+    "presentation": {
+      "href": "http://localhost/catalog/iiif/1234/manifest"
+    },
+    "enw": {
+      "href": "http://localhost/catalog/reference/1234/enw"
+    },
+    "ris": {
+      "href": "http://localhost/catalog/reference/1234/ris"
+    },
+    "wiki": {
+      "href": "http://localhost/catalog/reference/1234/wiki"
+    },
+    "relatedItems": {
+      "href": "http://localhost/catalog/items/1234/relatedItems"
+    },
+    "playlist": {
+      "href": "http://localhost/catalog/playlist/1234/jwplayer.rss"
+    }
+  },
+  "accessInfo": {
+    "accessAllowedFrom": "NB",
+    "viewability": "ALL",
+    "isDigital": false,
+    "isPublicDomain": false
+  },
+  "metadata": {
+    "titleInfos": [
+      {
+        "title": "Radio hej"
+      }
+    ],
+    "typeOfResource": "sound recording",
+    "mediaTypes": [
+      "Radio"
+    ],
+    "geographic": {},
+    "originInfo": {},
+    "recordInfo": {
+      "identifier": "1234",
+      "identifierSource": "mavis.nb.no"
+    },
+    "classification": {},
+    "identifiers": {
+      "sesamId": "1234",
+      "oaiId": "oai:mavis.nb.no:1234"
+    },
+    "subject": {},
+    "streamingInfo": [
+      {
+        "identifier": "urn1",
+        "offset": 1,
+        "extent": 10
+      },
+      {
+        "identifier": "urn2",
+        "offset": 10,
+        "extent": 30
+      }
+    ]
+  },
+  "title": "Radio hej"
+}
