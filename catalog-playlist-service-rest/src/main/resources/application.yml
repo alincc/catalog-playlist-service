@@ -10,7 +10,7 @@ endpoints:
     enabled: true
 
 server:
-  port: 8080
+  port: 8106
 
 spring:
 
@@ -27,6 +27,9 @@ playlist:
 ---
 spring:
     profiles: docker
+
+server:
+  port: 8080
 
 eureka:
   instance:
