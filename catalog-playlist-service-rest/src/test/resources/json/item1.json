@@ -37,6 +37,10 @@
     "titleInfos": [
       {
         "title": "Djäfvulens polska ; Värmlandsvalser 1 och 2"
+      },
+      {
+        "title": "Alternativ tittel",
+        "type": "alternative"
       }
     ],
     "typeOfResource": "sound recording-musical",

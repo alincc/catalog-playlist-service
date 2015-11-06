@@ -85,10 +85,17 @@ public class PlaylistService implements IPlaylistService {
         } else {
             playlist.hasAccess(false);
         }
-
         playlist.setSesamId(item.getMetadata().getIdentifiers().getSesamId());
         playlist.setTitle(item.getTitle());
         playlist.setMediatype(String.join(";",item.getMetadata().getMediaTypes()));
+        if (item.getMetadata().getTitleInfos() != null) {
+            for (TitleInfo titleInfo : item.getMetadata().getTitleInfos()) {
+                if ("alternative".equalsIgnoreCase(titleInfo.getType())) {
+                    playlist.setAlternativeTitle(titleInfo.getTitle());
+                    break;
+                }
+            }
+        }
 
         return playlist;
     }
