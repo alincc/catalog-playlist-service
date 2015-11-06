@@ -14,7 +14,6 @@ import java.io.File;
 import java.nio.file.Paths;
 import java.util.Arrays;
 
-import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.when;
@@ -41,7 +40,7 @@ public class PlaylistServiceTest {
     public void whenMusicHasNoRelatedItemsPlaylistsShouldBeNull() throws Exception {
         ItemResource item = new ItemResource();
         item.setMetadata(new Metadata());
-        item.getMetadata().setIdentifiers(new Identifiers());;
+        item.getMetadata().setIdentifiers(new Identifiers());
         item.getMetadata().getIdentifiers().setUrn("urn1234");
         item.setAccessInfo(new AccessInfo());
         item.getAccessInfo().setDigital(true);
@@ -66,7 +65,7 @@ public class PlaylistServiceTest {
         ItemResource item = new ItemResource();
         item.setMetadata(new Metadata());
         item.getMetadata().setMediaTypes(Arrays.asList("Radio"));
-        item.getMetadata().setIdentifiers(new Identifiers());;
+        item.getMetadata().setIdentifiers(new Identifiers());
         item.getMetadata().getIdentifiers().setUrn("urn1234");
         item.setAccessInfo(new AccessInfo());
         item.getAccessInfo().setDigital(true);
