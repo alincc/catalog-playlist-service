@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @FeignClient("catalog-item-service")
 public interface CatalogItemRepository {
-    @RequestMapping(value = "/catalog/items/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/v1/catalog/items/{id}", method = RequestMethod.GET)
     ItemResource getItem(@PathVariable("id") String id, @RequestParam(value = "expand" , defaultValue = "relatedItems") String expand);
 }

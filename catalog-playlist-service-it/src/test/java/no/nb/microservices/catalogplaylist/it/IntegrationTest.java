@@ -51,9 +51,9 @@ public class IntegrationTest {
         final Dispatcher dispatcher = new Dispatcher() {
             @Override
             public MockResponse dispatch(RecordedRequest recordedRequest) throws InterruptedException {
-                if (recordedRequest.getPath().equals("/catalog/items/4321?expand=relatedItems")) {
+                if (recordedRequest.getPath().equals("/v1/catalog/items/4321?expand=relatedItems")) {
                     return new MockResponse().setBody(item1).setResponseCode(200).setHeader("Content-Type", "application/hal+json; charset=utf-8");
-                } else if (recordedRequest.getPath().equals("/catalog/items/1234?expand=relatedItems")) {
+                } else if (recordedRequest.getPath().equals("/v1/catalog/items/1234?expand=relatedItems")) {
                     return new MockResponse().setBody(item2).setResponseCode(200).setHeader("Content-Type", "application/hal+json; charset=utf-8");
                 }
                 return new MockResponse().setResponseCode(404);
@@ -73,13 +73,13 @@ public class IntegrationTest {
 
     @Test
     public void testMusicPlaylist() {
-        ResponseEntity<String> entity = restTemplate.getForEntity("http://localhost:" + port + "/catalog/playlist/4321/jwplayer.rss", String.class);
+        ResponseEntity<String> entity = restTemplate.getForEntity("http://localhost:" + port + "/v1/catalog/playlist/4321/jwplayer.rss", String.class);
         assertEquals(HttpStatus.OK, entity.getStatusCode());
     }
 
     @Test
     public void testRadioPlaylist() {
-        ResponseEntity<String> entity = restTemplate.getForEntity("http://localhost:" + port + "/catalog/playlist/1234/jwplayer.rss", String.class);
+        ResponseEntity<String> entity = restTemplate.getForEntity("http://localhost:" + port + "/v1/catalog/playlist/1234/jwplayer.rss", String.class);
         assertEquals(HttpStatus.OK, entity.getStatusCode());
     }
 

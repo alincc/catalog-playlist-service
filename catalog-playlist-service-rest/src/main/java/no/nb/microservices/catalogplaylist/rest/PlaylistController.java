@@ -10,7 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(value = "/catalog/playlist/")
+@RequestMapping(value = "/v1/catalog/playlist/")
 public class PlaylistController {
     private static final String REGEX = "^[a-zA-Z0-9]*$";
     private final PlaylistService playlistService;

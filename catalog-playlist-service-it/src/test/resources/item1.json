@@ -67,28 +67,28 @@
         "id": "dc459852bb1cb16996eae98d8d2dc980",
         "_links": {
           "self": {
-            "href": "http://localhost/catalog/items/dc459852bb1cb16996eae98d8d2dc980"
+            "href": "http://localhost/v1/catalog/items/dc459852bb1cb16996eae98d8d2dc980"
           },
           "mods": {
-            "href": "http://localhost/catalog/metadata/dc459852bb1cb16996eae98d8d2dc980/mods"
+            "href": "http://localhost/v1/catalog/metadata/dc459852bb1cb16996eae98d8d2dc980/mods"
           },
           "presentation": {
-            "href": "http://localhost/catalog/iiif/dc459852bb1cb16996eae98d8d2dc980/manifest"
+            "href": "http://localhost/v1/catalog/iiif/dc459852bb1cb16996eae98d8d2dc980/manifest"
           },
           "enw": {
-            "href": "http://localhost/catalog/reference/dc459852bb1cb16996eae98d8d2dc980/enw"
+            "href": "http://localhost/v1/catalog/reference/dc459852bb1cb16996eae98d8d2dc980/enw"
           },
           "ris": {
-            "href": "http://localhost/catalog/reference/dc459852bb1cb16996eae98d8d2dc980/ris"
+            "href": "http://localhost/v1/catalog/reference/dc459852bb1cb16996eae98d8d2dc980/ris"
           },
           "wiki": {
-            "href": "http://localhost/catalog/reference/dc459852bb1cb16996eae98d8d2dc980/wiki"
+            "href": "http://localhost/v1/catalog/reference/dc459852bb1cb16996eae98d8d2dc980/wiki"
           },
           "relatedItems": {
-            "href": "http://localhost/catalog/items/dc459852bb1cb16996eae98d8d2dc980/relatedItems"
+            "href": "http://localhost/v1/catalog/items/dc459852bb1cb16996eae98d8d2dc980/relatedItems"
           },
           "playlist": {
-            "href": "http://localhost/catalog/playlist/dc459852bb1cb16996eae98d8d2dc980/jwplayer.rss"
+            "href": "http://localhost/v1/catalog/playlist/dc459852bb1cb16996eae98d8d2dc980/jwplayer.rss"
           }
         },
         "accessInfo": {
@@ -136,28 +136,28 @@
         "id": "72609a40cbe13445068572e1fab88dc7",
         "_links": {
           "self": {
-            "href": "http://localhost/catalog/items/72609a40cbe13445068572e1fab88dc7"
+            "href": "http://localhost/v1/catalog/items/72609a40cbe13445068572e1fab88dc7"
           },
           "mods": {
-            "href": "http://localhost/catalog/metadata/72609a40cbe13445068572e1fab88dc7/mods"
+            "href": "http://localhost/v1/catalog/metadata/72609a40cbe13445068572e1fab88dc7/mods"
           },
           "presentation": {
-            "href": "http://localhost/catalog/iiif/72609a40cbe13445068572e1fab88dc7/manifest"
+            "href": "http://localhost/v1/catalog/iiif/72609a40cbe13445068572e1fab88dc7/manifest"
           },
           "enw": {
-            "href": "http://localhost/catalog/reference/72609a40cbe13445068572e1fab88dc7/enw"
+            "href": "http://localhost/v1/catalog/reference/72609a40cbe13445068572e1fab88dc7/enw"
           },
           "ris": {
-            "href": "http://localhost/catalog/reference/72609a40cbe13445068572e1fab88dc7/ris"
+            "href": "http://localhost/v1/catalog/reference/72609a40cbe13445068572e1fab88dc7/ris"
           },
           "wiki": {
-            "href": "http://localhost/catalog/reference/72609a40cbe13445068572e1fab88dc7/wiki"
+            "href": "http://localhost/v1/catalog/reference/72609a40cbe13445068572e1fab88dc7/wiki"
           },
           "relatedItems": {
-            "href": "http://localhost/catalog/items/72609a40cbe13445068572e1fab88dc7/relatedItems"
+            "href": "http://localhost/v1/catalog/items/72609a40cbe13445068572e1fab88dc7/relatedItems"
           },
           "playlist": {
-            "href": "http://localhost/catalog/playlist/72609a40cbe13445068572e1fab88dc7/jwplayer.rss"
+            "href": "http://localhost/v1/catalog/playlist/72609a40cbe13445068572e1fab88dc7/jwplayer.rss"
           }
         },
         "accessInfo": {
