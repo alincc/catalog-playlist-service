@@ -3,28 +3,28 @@
   "id": "1234",
   "_links": {
     "self": {
-      "href": "http://localhost/v1/catalog/items/1234"
+      "href": "http://localhost/catalog/v1/items/1234"
     },
     "mods": {
-      "href": "http://localhost/v1/catalog/metadata/1234/mods"
+      "href": "http://localhost/catalog/v1/metadata/1234/mods"
     },
     "presentation": {
-      "href": "http://localhost/v1/catalog/iiif/1234/manifest"
+      "href": "http://localhost/catalog/v1/iiif/1234/manifest"
     },
     "enw": {
-      "href": "http://localhost/v1/catalog/reference/1234/enw"
+      "href": "http://localhost/catalog/v1/reference/1234/enw"
     },
     "ris": {
-      "href": "http://localhost/v1/catalog/reference/1234/ris"
+      "href": "http://localhost/catalog/v1/reference/1234/ris"
     },
     "wiki": {
-      "href": "http://localhost/v1/catalog/reference/1234/wiki"
+      "href": "http://localhost/catalog/v1/reference/1234/wiki"
     },
     "relatedItems": {
-      "href": "http://localhost/v1/catalog/items/1234/relatedItems"
+      "href": "http://localhost/catalog/v1/items/1234/relatedItems"
     },
     "playlist": {
-      "href": "http://localhost/v1/catalog/playlist/1234/jwplayer.rss"
+      "href": "http://localhost/catalog/v1/playlist/1234/jwplayer.rss"
     }
   },
   "accessInfo": {
