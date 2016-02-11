@@ -44,7 +44,7 @@ public class PlaylistServiceTest {
         item.getMetadata().getIdentifiers().setUrn("urn1234");
         item.setAccessInfo(new AccessInfo());
         item.getAccessInfo().setDigital(true);
-        item.getMetadata().setMediaTypes(Arrays.asList("Musikk"));
+        item.setMediatypes(Arrays.asList("Musikk"));
         when(catalogItemRepository.getItem("1234","relatedItems")).thenReturn(item);
         Playlist playlist = playlistService.findById("1234");
         assertNull("Playlists should be null", playlist.getPlaylists());
@@ -54,7 +54,7 @@ public class PlaylistServiceTest {
     public void whenWrongMediatypeResponseShouldBeNull() throws Exception {
         ItemResource item = new ItemResource();
         item.setMetadata(new Metadata());
-        item.getMetadata().setMediaTypes(Arrays.asList("random","mediatypes"));
+        item.setMediatypes(Arrays.asList("random","mediatypes"));
         when(catalogItemRepository.getItem("1234","relatedItems")).thenReturn(item);
         Playlist pl = playlistService.findById("1234");
         assertNull("playlist should be null",pl);
@@ -64,7 +64,7 @@ public class PlaylistServiceTest {
     public void whenRadioHasStreamingInfoPlaylistsShouldNotBeEmpty() {
         ItemResource item = new ItemResource();
         item.setMetadata(new Metadata());
-        item.getMetadata().setMediaTypes(Arrays.asList("Radio"));
+        item.setMediatypes(Arrays.asList("Radio"));
         item.getMetadata().setIdentifiers(new Identifiers());
         item.getMetadata().getIdentifiers().setUrn("urn1234");
         item.setAccessInfo(new AccessInfo());

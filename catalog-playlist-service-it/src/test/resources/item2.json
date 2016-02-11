@@ -33,6 +33,9 @@
     "isDigital": false,
     "isPublicDomain": false
   },
+  "mediatypes": [
+    "Radio"
+  ],
   "metadata": {
     "titleInfos": [
       {
@@ -40,9 +43,6 @@
       }
     ],
     "typeOfResource": "sound recording",
-    "mediaTypes": [
-      "Radio"
-    ],
     "geographic": {},
     "originInfo": {},
     "recordInfo": {
