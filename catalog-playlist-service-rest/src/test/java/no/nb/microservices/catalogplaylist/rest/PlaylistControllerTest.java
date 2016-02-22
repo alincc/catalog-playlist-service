@@ -47,9 +47,4 @@ public class PlaylistControllerTest {
         playlistController.showJwPlayerRss("1234",null,null);
     }
 
-    @Test(expected = IllegalArgumentException.class)
-    public void whenIllegalIdExceptionShouldBeThrown() throws Exception {
-        playlistController.showJwPlayerRss("!1324","1","2");
-    }
-
 }

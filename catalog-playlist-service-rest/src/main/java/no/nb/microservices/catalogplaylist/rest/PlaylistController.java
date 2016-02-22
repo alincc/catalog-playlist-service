@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping(value = "/catalog/v1/playlist/")
 public class PlaylistController {
-    private static final String REGEX = "^[a-zA-Z0-9]*$";
     private final PlaylistService playlistService;
     private final RssPlaylistResourceAssembler rssPlaylistResourceAssembler;
 
@@ -26,9 +25,6 @@ public class PlaylistController {
     ResponseEntity<Rss> showJwPlayerRss(@PathVariable String sesamId,
                         @RequestParam(required = false) String offset,
                         @RequestParam(required = false) String extent) {
-        if (!sesamId.matches(REGEX)) {
-            throw new IllegalArgumentException();
-        }
         Playlist playlist = playlistService.findById(sesamId);
         if (playlist == null) {
             throw new PlaylistNotFoundException("");
