@@ -4,7 +4,7 @@ info:
     description: playlist
 
 server:
-  port: 0
+  port: 8021
 
 playlist:
   streamService: http://localhost:80
