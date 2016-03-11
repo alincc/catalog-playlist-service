@@ -76,14 +76,9 @@
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>no.nb.microservices</groupId>
-            <artifactId>catalog-metadata-model</artifactId>
-            <version>0.0.1-130</version>
-        </dependency>
-        <dependency>
             <groupId>no.nb.microservices.catalogitem</groupId>
             <artifactId>catalog-item-service-model</artifactId>
-            <version>0.0.1-204</version>
+            <version>0.0.1-222</version>
         </dependency>
 
         <!-- Testing -->

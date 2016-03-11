@@ -23,7 +23,7 @@ public class PlaylistService implements IPlaylistService {
     @Override
     public Playlist findById(String sesamId) {
         ItemResource item = itemRepository.getItem(sesamId, "relatedItems");
-        List<String> mediatypes = item.getMediatypes();
+        List<String> mediatypes = item.getMetadata().getMediaTypes();
         if (hasMediatype(mediatypes,"musikk")) {
             return getMusicPlaylist(item);
         } else if (hasMediatype(mediatypes,"radio")) {
@@ -87,7 +87,7 @@ public class PlaylistService implements IPlaylistService {
         }
         playlist.setSesamId(item.getMetadata().getIdentifiers().getSesamId());
         playlist.setTitle(item.getTitle());
-        playlist.setMediatype(String.join(";",item.getMediatypes()));
+        playlist.setMediatype(String.join(";",item.getMetadata().getMediaTypes()));
         if (item.getMetadata().getTitleInfos() != null) {
             for (TitleInfo titleInfo : item.getMetadata().getTitleInfos()) {
                 if ("alternative".equalsIgnoreCase(titleInfo.getType())) {

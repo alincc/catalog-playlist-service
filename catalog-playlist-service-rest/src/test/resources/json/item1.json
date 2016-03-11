@@ -33,9 +33,6 @@
     "isDigital": false,
     "isPublicDomain": false
   },
-  "mediatypes": [
-    "Musikk"
-  ],
   "metadata": {
     "titleInfos": [
       {
@@ -61,6 +58,9 @@
     "subject": {},
     "streamingInfo": [
       {}
+    ],
+    "mediaTypes": [
+      "Musikk"
     ]
   },
   "title": "Djäfvulens polska ; Värmlandsvalser 1 och 2",
@@ -101,9 +101,6 @@
           "isDigital": true,
           "isPublicDomain": true
         },
-        "mediatypes": [
-          "Musikk"
-        ],
         "metadata": {
           "titleInfos": [
             {
@@ -131,6 +128,9 @@
             {
               "identifier": "URN:NBN:no-nb_digilyd_2014042213686"
             }
+          ],
+          "mediaTypes": [
+            "Musikk"
           ]
         },
         "title": "Djäfvulens polska"
@@ -170,9 +170,6 @@
           "isDigital": true,
           "isPublicDomain": true
         },
-        "mediatypes": [
-          "Musikk"
-        ],
         "metadata": {
           "titleInfos": [
             {
@@ -200,6 +197,9 @@
             {
               "identifier": "URN:NBN:no-nb_digilyd_2014042213688"
             }
+          ],
+          "mediaTypes": [
+            "Musikk"
           ]
         },
         "title": "Värmlandsvalser 1 och 2"

@@ -33,9 +33,6 @@
     "isDigital": false,
     "isPublicDomain": false
   },
-  "mediatypes": [
-    "Radio"
-  ],
   "metadata": {
     "titleInfos": [
       {
@@ -66,6 +63,9 @@
         "offset": 10,
         "extent": 30
       }
+    ],
+    "mediaTypes": [
+      "Radio"
     ]
   },
   "title": "Radio hej"
