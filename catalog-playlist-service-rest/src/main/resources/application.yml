@@ -1,10 +1,23 @@
 info:
-  app:
-    name: catalog-playlist-service
-    description: playlist
+    app:
+        name: catalog-playlist-service
+        description: playlist
+    build:
+        artifact: ${project.artifactId}
+        name: ${project.name}
+        description: ${project.description}
+        version: ${project.version}
 
 server:
-  port: 8021
+    port: 8021
+
+zipkin:
+    collector-hostname: localhost
+    
+monitoring:
+    hostname: localhost
+    port: 2003
+    period: 1    
 
 playlist:
-  streamService: http://localhost:80
+    streamService: http://localhost:80

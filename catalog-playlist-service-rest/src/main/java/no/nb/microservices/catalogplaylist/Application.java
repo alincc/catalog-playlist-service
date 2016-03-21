@@ -9,12 +9,15 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.hateoas.config.EnableHypermediaSupport;
 
+import no.nb.metrics.annotation.EnableMetrics;
+
 @SpringBootApplication
 @EnableConfigurationProperties
 @EnableDiscoveryClient
 @EnableFeignClients
 @EnableCircuitBreaker
 @RefreshScope
+@EnableMetrics
 @EnableHypermediaSupport(type= {EnableHypermediaSupport.HypermediaType.HAL})
 public class Application {
 
